@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color-1: #fff;
+    --main-color-2: #f00;
+    --section-title-color: #000;
+    --shadow-color: #FF00004D;
+    --bg-color: #28272C;
+    --blog-text-color: #6A6A6A;
+    --service-text-color: #B2B2B2;
+    --contact-form-color: #B2B2B2;
+    --section-title-font-size: 35px;
+    --section-h1-font-size: 19px;
+    --section-p-font-size: 14px;
+    --section-a-font-size: 14px;
+    --main-font-family: 'Nunito Sans', sans-serif;
+    --secondary-font-family-2: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2)
+}
+
+header .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .container ul li {
+    height: 86px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font-family);
+    font-weight: 700;
+}
+
+header .container ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color-1);
+    padding: 0 40px;
+}
+
+header .container ul a:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header .container > a {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--main-color-1);
+    font-size: var(--section-title-font-size);
+    font-family: var(--main-font-family);
+    font-weight: 800;
+}
+
+header .container > a img {
+    margin-right: 5px;
+}
+
+header .container > a span {
+    color: var(--main-color-2);
+    font-weight: 700;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url("../images/Image.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+}
+
+.banner .container {
+    font-family: var(--main-font-family);
+    position: relative;
+    z-index: 3;
+}
+
+.banner h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    color: var(--main-color-1);
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.banner p {
+    font-size: 16px;
+    color: var(--main-color-1);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.banner .links a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    padding: 20px 50px;
+    margin: 0 10px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px var(--shadow-color);
+}
+
+.banner .links a:first-child {
+    color: var(--main-color-1);
+    background: var(--main-color-2);
+}
+
+.banner .links a:last-child {
+    color: var(--main-color-2);
+    background: var(--main-color-1);
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+}
+
+.banner div:nth-child(2) {
+    z-index: 2;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--main-color-2);
+    bottom: -23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px var(--shadow-color);
+}
+
+h1.section-title {
+    font-size: var(--section-title-font-size);
+    color: var(--section-title-color);
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+h1.section-title::before,
+h1.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--main-color-2);
+    box-shadow: 0px 3px 6px var(--shadow-color);
+    margin: 0 10px;
+}
+
+.blog .container,
+.service .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    background: var(--bg-color);
+}
+
+.blog .container h1,
+.service .container h1 {
+    font-family: var(--main-font-family);
+    font-size: var(--section-h1-font-size);
+    color: var(--blog-text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.blog .container p,
+.service .container p {
+    font-family: var(--secondary-font-family-2);
+    font-size: var(--section-p-font-size);
+    color: var(--blog-text-color);
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.service .container h1,
+.service .container p {
+    color: var(--service-text-color);
+}
+
+.blog .container a,
+.service .container a {
+    font-family: var(--main-font-family);
+    font-size: var(--section-a-font-size);
+    color: var(--main-color-1);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: var(--main-color-2);
+    box-shadow: 0px 3px 6px var(--shadow-color);
+}
+
+.service .container {
+    padding: 20px 20px 100px 20px;
+}
+
+.service .container div {
+    text-align: center;
+    padding: 10px;
+}
+
+.service h1.section-title {
+    color: var(--main-color-1);
+    padding: 80px 0 40px 0;
+}
+
+.contact .container {
+    width: 904px;
+    margin: 50px auto 150px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .container form {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact textarea {
+    outline: none;
+    border: 1px solid var(--contact-form-color);
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact textarea,
+input::placeholder,
+textarea::placeholder {
+    font-family: var(--main-font-family);
+    font-size: 16px;
+    color: var(--contact-form-color);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--main-color-2); /*Dlaczego border inputu nie robi się czerwony?*/
+    box-shadow: 0px 3px 6px var(--shadow-color);
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid var(--contact-form-color);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkbox input:checked + span {
+      background-image: url(../images/Icon\ Check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.checkbox {
+    font-family: var(--secondary-font-family);
+    font-size: 10px;
+    color: var(--contact-form-color);
+}
+
+.contact form input[type="submit"] {
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color-2);
+    background: var(--main-color-1);
+    padding: 10px 40px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid var(--main-color-2);
+    box-shadow: 0px 3px 6px var(--shadow-color);
+    text-align: right;
+}
+
+.contact form input[type="submit"]:hover {
+    cursor: pointer;
+    color: var(--main-color-1);
+    background: var(--main-color-2);
+}
+
+.contact form div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    background: var(--bg-color);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 400px;
+}
+
+footer .links ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+footer .links ul a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-color-1);
+    font-size: 14px;
+    font-family: var(--main-font-family);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+footer .links ul a:hover {
+    color: var(--main-color-2);
+}
+
+footer .links ul:first-child li:first-child {
+    display: flex;
+    align-items: center;
+}
+
+footer .links ul:first-child li:first-child a {
+    font-size: 25px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+footer .links ul:first-child li:first-child span {
+    color: var(--main-color-2);
+    padding: 0 5px;
+}
+
+footer .container p {
+    align-self: flex-end;
+    margin-bottom: 30px;
+    font-size: 12px;
+    font-family: var(--main-font-family);
+    color: var(--contact-form-color);
+}

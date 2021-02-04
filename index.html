@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car-sharing</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="Normalize/Reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800;900&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href=""><img src="images/Icon.svg" alt="Icon"> Car<span>Sharing</span></a>
+            <a href=""><img src="images/Icon.svg" alt="Icon">Car<span>Sharing</span></a>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Contact</a></li>
+                    <a href=""><li>Home</li></a>
+                    <a href=""><li>Blog</li></a>
+                    <a href=""><li>Service</li></a>
+                    <a href=""><li>Contact</li></a>
                 </ul>
             </nav>
         </div>
@@ -24,16 +25,16 @@
     <section class="banner">
         <div class="container">
             <h1>Car Sharing</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati placeat id aliquam ea nesciunt nihil quasi, delectus ut sapiente vero beatae minus alias ad, in autem dolore. Vitae, ipsa!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="links">
                 <a href="">Share a car</a>
                 <a href="">Key features</a>
             </div>
         </div>
-        <div><img src="images/Icon Arrow Down.svg" alt="Arrow"></div>
+        <div><img src="images/Icon Arrow Down.svg" alt="Arrow"></div>  <!--Jak ustawić żeby była widoczna cała przy starcie strony?-->
     </section>
     <section class="blog">
-        <h1>Blog</h1>
+        <h1 class="section-title">Blog</h1>
         <div class="container">
             <div>
                 <img src="images/photo1.png" alt="Gearbox">
@@ -56,50 +57,54 @@
         </div>
     </section>
     <section class="service">
-        <h1>Service</h1>
+        <h1 class="section-title">Service</h1>
         <div class="container">
             <div>
                 <img src="images/mini1.png" alt="Gearbox">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique itaque cupiditate nostrum asperiores, vitae, voluptas odio eos quo, minus et repellat architecto error explicabo recusandae quia rem harum repellendus! Voluptas?</p>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa tenetur nesciunt totam beatae quia tempore quisquam consequatur vero odio? Rerum?</p>
                 <a href="">Read more</a>
             </div>
             <div>
                 <img src="images/mini2.png" alt="Gearbox2">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique itaque cupiditate nostrum asperiores, vitae, voluptas odio eos quo, minus et repellat architecto error explicabo recusandae quia rem harum repellendus! Voluptas?</p>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa tenetur nesciunt totam beatae quia tempore quisquam consequatur vero odio? Rerum?</p>
                 <a href="">Read more</a>
             </div>
             <div>
                 <img src="images/mini3.png" alt="Wheel">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique itaque cupiditate nostrum asperiores, vitae, voluptas odio eos quo, minus et repellat architecto error explicabo recusandae quia rem harum repellendus! Voluptas?</p>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa tenetur nesciunt totam beatae quia tempore quisquam consequatur vero odio? Rerum?</p>
                 <a href="">Read more</a>
             </div>
             <div>
                 <img src="images/mini4.png" alt="Tools">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique itaque cupiditate nostrum asperiores, vitae, voluptas odio eos quo, minus et repellat architecto error explicabo recusandae quia rem harum repellendus! Voluptas?</p>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa tenetur nesciunt totam beatae quia tempore quisquam consequatur vero odio? Rerum?</p>
                 <a href="">Read more</a>
             </div>
         </div>
     </section>
     <section class="contact">
-        <h1>Contact</h1>
+        <h1 class="section-title">Contact</h1>
         <div class="container">
             <img src="images/Form Photo.png" alt="Parking">
             <form>
                 <div class="row">
-                    <input name="name" type="text" placeholder="type your name">
+                    <input name="name" type="text" placeholder="Type your name">
                 </div>
                 <div class="row">
-                    <input name="email" type="email" placeholder="type your e-mail" required>
+                    <input name="email" type="email" placeholder="Type your e-mail" required>
                 </div>
                 <div class="row">
-                    <textarea name="message" rows="6" placeholder="type your message"></textarea>
+                    <textarea name="message" rows="6" placeholder="Type your message"></textarea>
                 </div>
                 <div class="row">
-                    <input name="read" type="checkbox" placeholder="type your name" id="read"><span></span> <label for="read">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis cum eius, voluptatem optio quos quia laborum expedita magnam velit minus voluptatibus nemo. Excepturi provident laborum fugiat numquam modi praesentium.</label>
+                    <label class="checkbox" for="read">
+                        <input name="read" type="checkbox" id="read">
+                        <span></span>
+                        I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+                    </label>
                 </div>
                 <div class="row">
                     <input type="submit" value="send">
@@ -110,16 +115,16 @@
     <footer>
         <div class="container">
             <div class="links">
-                <a href="images/Logo Footer.svg" alt="Logo"><img> car <span>sharing</span></a>
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">about</a></li>
+                    <li><a href="#"><img src="images/Logo Footer.svg" alt="Logo"><span> car</span> sharing</a></li>
+                    <li><a href="">home page</a></li>
+                    <li><a href="">about us</a></li>
                     <li><a href="">gallery</a></li>
-                    <li><a href="">share</a></li>
+                    <li><a href="">share regulation</a></li>
                 </ul>
                 <ul>
                     <li><a href="">price</a></li>
-                    <li><a href="">fleet</a></li>
+                    <li><a href="">our fleet</a></li>
                     <li><a href="">our clients</a></li>
                     <li><a href="">contact</a></li>
                 </ul>

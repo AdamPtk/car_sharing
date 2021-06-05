@@ -27,7 +27,7 @@
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 90px;
     width: 100%;
@@ -92,7 +92,7 @@ header .container > a span {
 }
 
 .banner {
-    height: 100vh;
+    height: 95vh;
     background-image: url("../images/Image.png");
     background-size: cover;
     background-position: center;

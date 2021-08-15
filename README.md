@@ -8,4 +8,4 @@ Tools & technologies:
 
 ### Check it out here:
 
-<a href="https://adamptk.github.io/car_sharing/car_sharing/"><img src="BestShop/assets/BestShop.png" alt="CarSharing" /></a>
+<a href="https://adamptk.github.io/car_sharing/car_sharing/"><img src="car_sharing/images/CarSharing.png" alt="CarSharing" /></a>
